@@ -106,9 +106,9 @@ namespace XRayAnalysis.Droid.Service.AI
                 {
                     SKColor pixel = image.GetPixel(col, row);
                     int index = (row * image.Width + col) * ImageChannels;
-                    multiArray[index] = pixel.Red;
-                    multiArray[index + 1] = pixel.Green;
-                    multiArray[index + 2] = pixel.Blue;
+                    multiArray[index] = pixel.Red / 255.0f;
+                    multiArray[index + 1] = pixel.Green / 255.0f;
+                    multiArray[index + 2] = pixel.Blue / 255.0f;
                 }
             }
 

@@ -27,7 +27,7 @@ namespace XRayAnalysis.Droid.Service.AI.ChestXRay
         {
             public const string AssetPath = "file:///android_asset/SampleModel.pb";
             public const string InputTensorName = "input_1";
-            public const string OutputNodeName = "output_0";
+            public const string OutputNodeName = "output_node0";
             public const string ActivationMapNodeName = "DenseNet/activation_121/Relu";
         }
 
